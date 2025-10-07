@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PowerWash Monterrey · Lavado a Domicilio</title>
+  <meta name="description" content="PowerWash Monterrey — Lavado y detallado de autos a domicilio. Servicio profesional, promociones y membresías en Monterrey." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#promos">Promociones</a>
+    <a href="#membresias">Membresías</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <header>
+    <h1>PowerWash Monterrey</h1>
+    <p>Lavado y detallado profesional a domicilio con orgullo mexicano 🇲🇽</p>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1601758003122-79c5bff8d8a4?auto=format&fit=crop&w=1400&q=80" alt="Auto mexicano detallado">
+    </div>
+  </header>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=800&q=60" alt="Lavado exterior">
+        <h3>Lavado Exterior</h3>
+        <p>Espuma activa, enjuague y secado sin marcas. Ideal para mantener tu coche impecable.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=800&q=60" alt="Detalle interior">
+        <h3>Detalle Interior</h3>
+        <p>Aspirado profundo, limpieza de tapicería y desinfección con ozono.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=800&q=60" alt="Encerado premium">
+        <h3>Encerado Premium</h3>
+        <p>Protege la pintura de tu vehículo del sol y la lluvia con un brillo duradero.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=60" alt="Pulido profesional">
+        <h3>Pulido Profesional</h3>
+        <p>Remueve rayones leves y restaura el color de fábrica con acabado espejo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <p>Explora algunos de los trabajos que hemos realizado en Monterrey.</p>
+    <div class="grid">
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=900&q=70" alt="Auto mexicano limpio">
+      <img src="https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?auto=format&fit=crop&w=900&q=70" alt="Coche familiar mexicano">
+      <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=900&q=70" alt="Brillo intenso">
+      <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=70" alt="Vocho clásico mexicano">
+    </div>
+  </section>
+
+  <section id="promos">
+    <h2>Promociones</h2>
+    <div class="promo">
+      <h3>¡Promoción del mes! 💥</h3>
+      <p>Encerado gratis al contratar un paquete de lavado completo + interior.</p>
+      <a class="btn" href="https://wa.me/528129300953?text=Hola%20PowerWash%20Quiero%20aprovechar%20la%20promoci%C3%B3n" target="_blank">Aprovechar promoción</a>
+    </div>
+  </section>
+
+  <section id="membresias">
+    <h2>Membresías</h2>
+    <p>Únete a nuestros planes de membresía y obtén descuentos exclusivos.</p>
+    <div class="membresias">
+      <div class="membresia">
+        <h3>Bronce</h3>
+        <p>2 lavados mensuales</p>
+        <div class="price">$399 / mes</div>
+        <a class="btn" href="https://wa.me/528129300953?text=Quiero%20la%20membres%C3%ADa%20Bronce" target="_blank">Suscribirme</a>
+      </div>
+      <div class="membresia">
+        <h3>Plata</h3>
+        <p>4 lavados + 1 interior</p>
+        <div class="price">$799 / mes</div>
+        <a class="btn" href="https://wa.me/528129300953?text=Quiero%20la%20membres%C3%ADa%20Plata" target="_blank">Suscribirme</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <div class="contact">
+      <div>
+        <p>¿Quieres reservar un servicio o tienes dudas? Completa los campos y se enviará automáticamente a nuestro WhatsApp.</p>
+        <form onsubmit="event.preventDefault(); enviarWhatsApp();">
+          <input id="nombre" type="text" placeholder="Nombre" required>
+          <input id="telefono" type="tel" placeholder="Teléfono" required>
+          <input id="direccion" type="text" placeholder="Colonia o dirección">
+          <textarea id="mensaje" placeholder="Mensaje o tipo de servicio" rows="4"></textarea>
+          <button class="btn" type="submit">Enviar por WhatsApp</button>
+        </form>
+      </div>
+      <iframe src="https://www.google.com/maps?q=Monterrey%2C%20NL&z=12&output=embed"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 PowerWash Monterrey · Lavado a domicilio con orgullo mexicano 🇲🇽
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
